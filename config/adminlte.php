@@ -224,42 +224,40 @@ return [
     */
 
     'menu' => [
+
+        // [
+        //     'text' =>'user',
+        //     'url'  =>'admin/user',
+        //     'icon' =>'fas fa-fw fa-book',
+
+
+        // ],
         [
-            'text' =>'laporan masuk',
-            'url'  =>'admin/Lp',
-            'icon' =>'fas fa-fw fa-book',
-            
-            
+            'text' => 'Categories',
+            'url'  => 'admin/categories',
+            'icon' => 'far fa-list-alt',
+            'can' => 'isAdmin',
+
         ],
         [
-            'text' =>'user',
-            'url'  =>'admin/user',
-            'icon' =>'fas fa-fw fa-book',
-            
-            
+            'text' => 'Brand',
+            'url'  => 'admin/brands',
+            'icon' => 'far fa-list-alt',
+            'can' => 'isAdmin',
         ],
         [
-            'text' =>'product',
-            'url'  =>'admin/product',
-            'icon' =>'fas fa-fw fa-book',
-            
-            
+            'text' => 'product',
+            'url'  => 'admin/product',
+            'icon' => 'fas fa-box',
+            'can' => 'isAdmin',
         ],
         [
-            'text' =>'Categories',
-            'url'  =>'admin/categories',
-            'icon' =>'fas fa-fw fa-book',
-            
-            
+            'text' => 'laporan masuk',
+            'url'  => 'admin/Lp',
+            'icon' => 'fas fa-file-alt',
         ],
-        [
-            'text' =>'Brand',
-            'url'  =>'admin/brands',
-            'icon' =>'fas fa-fw fa-book',
-            
-            
-        ],
-  
+
+
         [
             'text' => 'search',
             'search' => true,
